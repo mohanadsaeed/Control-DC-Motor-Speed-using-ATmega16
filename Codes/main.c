@@ -32,7 +32,6 @@ int main(void){
 	Adc_ConfigType adc;
 	Ei_ConfigType int1;
 	Dcmotor_ConfigType motor;
-	Timer0_ConfigType PWM;
 
 	SET_BIT(SREG,7);
 	/*Set the configurations of the ADC driver*/
@@ -53,7 +52,7 @@ int main(void){
 	INT1_setCallBack(revertMotorDir);
 
 	/*Initialize the DC Motor driver*/
-	DCMOTOR_init(&motor,&PWM);
+	DCMOTOR_init(&motor);
 
 	LCD_init(); /* initialize LCD driver */
 	ADC_init(&adc); /* initialize ADC driver */

@@ -10,9 +10,9 @@
 
 #ifndef TIMER0_H
 #define TIMER0_H
-#include "../Important Heading Files/std_types.h"
-#include "../Important Heading Files/common_macros.h"
-#include "../Important Heading Files/micro_config.h"
+#include "../../Important Heading Files/std_types.h"
+#include "../../Important Heading Files/common_macros.h"
+#include "../../Important Heading Files/micro_config.h"
 
 /* -----------------------------------------------------------------------------
  *                         Types Declaration                                   *

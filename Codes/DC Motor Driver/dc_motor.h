@@ -14,7 +14,6 @@
 #include "../Important Heading Files/std_types.h"
 #include "../Important Heading Files/common_macros.h"
 #include "../Important Heading Files/micro_config.h"
-#include "../Timer0/timer0.h"
 
 /* ----------------------------------------------------------------------------
  *                         Timer Stucture Definition                          *
@@ -44,15 +43,7 @@ typedef struct{
 /* -----------------------------------------------------------------------------
  *                      Functions Prototypes                                   *
  ------------------------------------------------------------------------------*/
-#ifdef TIMER0
-void DCMOTOR_init(const Dcmotor_ConfigType * Motor_Ptr,\
-		Timer0_ConfigType * Timer_Ptr);
-#endif
-
-#ifdef TIMER2
-void DCMOTOR_init(const Dcmotor_ConfigType * Motor_Ptr,\
-		Timer2_ConfigType * Timer_Ptr);
-#endif
+void DCMOTOR_init(const Dcmotor_ConfigType * Motor_Ptr);
 void DCMOTOR_revertRotationDirection(void);
 void DCMOTOR_changeRotationDirection(Dcmotor_rotDir direction);
 void DCMOTOR_stop(void);
